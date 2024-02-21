@@ -279,16 +279,16 @@ class MaterialInfo:
         newmtl_str = 'newmtl ' + self._name + '\n\n'
         r_list.append(newmtl_str)
         if self._ka is not None:
-            ka_str = 'ka ' + self._ka.get_str() + '\n'
+            ka_str = 'Ka ' + self._ka.get_str() + '\n'
             r_list.append(ka_str)
         if self._kd is not None:
-            kd_str = 'kd ' + self._kd.get_str() + '\n'
+            kd_str = 'Kd ' + self._kd.get_str() + '\n'
             r_list.append(kd_str)
         if self._map_ka:
-            map_ka_str = 'map_ka ' + self._map_ka + '\n'
+            map_ka_str = 'map_Ka ' + self._map_ka + '\n'
             r_list.append(map_ka_str)
         if self._map_kd:
-            map_kd_str = 'map_kd ' + self._map_kd + '\n'
+            map_kd_str = 'map_Kd ' + self._map_kd + '\n'
             r_list.append(map_kd_str)
         r_list.append('\n')
         
