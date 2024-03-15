@@ -247,15 +247,15 @@ class MaterialInfo:
         list_len = len(s_list)
         if list_len == 0:
             return
-        if s_list[0] == 'ka':
+        if s_list[0] == 'Ka':
             self._ka = RGBInfo()
             self._ka.set_by_str(s_list)
-        elif s_list[0] == 'kd':
+        elif s_list[0] == 'Kd':
             self._kd = RGBInfo()
             self._kd.set_by_str(s_list)
-        elif s_list[0] == 'map_ka':
+        elif s_list[0] == 'map_Ka':
             self._map_ka = self._get_texture_name(s_list)
-        elif s_list[0] == 'map_kd':
+        elif s_list[0] == 'map_Kd':
             self._map_kd = self._get_texture_name(s_list)
 
     def _get_texture_name(self, s_list):
